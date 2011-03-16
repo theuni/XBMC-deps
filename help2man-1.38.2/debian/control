@@ -1,0 +1,19 @@
+Source: help2man
+Section: devel
+Priority: optional
+Maintainer: Brendan O'Dea <bod@debian.org>
+Standards-Version: 3.5.1
+Build-Depends: perl (>= 5.8.0-7), debhelper (>= 3.0.5), gettext (>= 0.12.1), liblocale-gettext-perl
+Vcs-Git: git://git.debian.org/users/bod/help2man.git
+Vcs-Browser: http://git.debian.org/?p=users/bod/help2man.git
+
+Package: help2man
+Architecture: any
+Depends: ${perl:Depends}, ${shlibs:Depends}, liblocale-gettext-perl
+Description: Automatic manpage generator
+ Program to create simple man pages from the --help and
+ --version output of other programs.
+ .
+ Since most GNU documentation is now in info format, this provides a
+ way to generate a placeholder man page pointing to that resource while
+ still providing some useful information.
